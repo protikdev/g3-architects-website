@@ -8,6 +8,13 @@
   font-family: "Work Sans", sans-serif;
 }
 .btn-primary {
+  border-radius: 8px;
+  background: #ff900e;
+  color: white;
+  padding: 10px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: 0;
 }
 /* header styles */
 header {
@@ -45,7 +52,8 @@ nav li a {
   margin: 0 auto;
 }
 .banner > img {
-  width: 1150px;
+  margin-top: 20px;
+  width: 100%;
   height: 500px;
 }
 .banner-title {
@@ -55,4 +63,23 @@ nav li a {
 }
 .banner-description {
   color: #727272;
+}
+/* Responsive media quary */
+/* Mobile devices */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
